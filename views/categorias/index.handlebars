@@ -1,0 +1,27 @@
+<style>
+  /* Remover cor azul e sublinhado dos hiperlinks */
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+</style>
+
+<h2>Categorias:</h2>
+<hr>
+
+<div class="container text-center card mt-4" style="background-color: #F8F9FA;">
+  <div class="row justify-content-absolute body-card">
+    {{#each categorias}}
+    <div class="col-4 card-body card mt-5 mx-4" style="background-color: {{cor}};"> {{!-- card-flex--}}
+      <a href="/categorias/{{keyword}}" style="color: inherit; text-decoration: none;"><h4>{{nome}}</h4></a>
+    </div>
+    {{/each}}
+  </div>
+  <div class="row">
+    <div class="col-12" style="margin-bottom: 40px;"></div> <!-- Espaço após a última div -->
+  </div>
+</div>
+
+<footer class="pt-3 mt-4 text-body-secondary border-top">
+  &copy; Lucas Leria 2023
+</footer>

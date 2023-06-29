@@ -1,0 +1,103 @@
+<style>
+  .vertical-bar {
+  width: 1px;
+  height: 130px; /* Mesma altura das imagens */
+  background-color: black;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+</style>
+
+<html lang="pt-br" data-bs-theme="auto">
+  <head><script src="/docs/5.3/assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.112.5">
+    <title></title>
+
+  </head>
+  <body>
+
+{{#if user}}
+ <div class="p-5 mb-4 bg-body-tertiary border rounded-3">  
+  <div class="container-fluid py-5">
+    <img src="https://avatars.githubusercontent.com/u/128545102?s=400&u=5f7697e0c8cd46ebbc12acc125bb5ce469086106&v=4" alt="Eu" style="float: right; margin-left: 10px; width: 300px; height: 300px; border-radius: 50%;">
+    <h1 class="display-5 fw-bold">Bem-vindo</h1>
+    <p class="col-md-8 fs-4">Este Blog App foi desenvolvido por Lucas Leria, com o intuito de pôr em prática conhecimentos de HTML, CSS e Node.js, fora os diversos frameworks utilizados, como Handlebars, Mongoose, Express, Passport, Body-parser, ...</p>
+    <a href="https://www.linkedin.com/in/lucasleria"><button class="btn btn-primary btn-lg" type="button">Conheça Lucas Leria</button></a>
+  </div>
+</div>
+
+
+
+
+  <div class="py-2">
+  <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+    <div class="text-end">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="Nuvem branca" style="float: left; margin-right: 10px; width: 130px; height: 130px;" class="mx-5">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="Nuvem branca" style="float: left; margin-right: 10px; width: 130px; height: 130px;" class="mx-5">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-plain.svg" alt="Nuvem branca" style="float: left; margin-right: 10px; width: 130px; height: 130px;" class="mx-5">
+      <h2>Ver as postagens</h2>
+      <p>Já tenho minha conta, quero ir direto para o que importa.</p>
+      {{#if user}}
+        <a href="/postagens"><button class="btn btn-outline-secondary" type="button">Postagens Recentes</button></a>
+      {{else}}  
+        <a href="usuarios/login"><button class="btn btn-outline-secondary" type="button">Login</button></a>
+        <a href="/postagens"><button class="btn btn-outline-secondary" type="button">Postagens Recentes</button></a>
+      {{/if}}
+    </div>
+  </div>
+</div>
+
+
+
+{{else}}
+<div class="p-5 mb-4 bg-body-tertiary border rounded-3">
+  <div class="container-fluid py-5">
+    <img src="https://avatars.githubusercontent.com/u/128545102?s=400&u=5f7697e0c8cd46ebbc12acc125bb5ce469086106&v=4" alt="Eu" style="float: right; margin-left: 10px; width: 300px; height: 300px; border-radius: 50%;">
+    <h1 class="display-5 fw-bold">Bem-vindo</h1>
+    <p class="col-md-8 fs-4">Este Blog App foi desenvolvido por Lucas Leria, com o intuito de pôr em prática conhecimentos de HTML, CSS e Node.js, fora os diversos frameworks utilizados, como Handlebars, Mongoose, Express, Passport, Body-parser, ...</p>
+    <a href="https://www.linkedin.com/in/lucasleria"><button class="btn btn-primary btn-lg mt-4" type="button">Conheça Lucas Leria</button></a>
+  </div>
+</div>
+
+    <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-bg-dark rounded-3">
+          <h2>Quero me registrar!</h2>
+          <p>Clique no botão abaixo e registre-se para ter acesso à toda aplicação.</p>
+          <a href="usuarios/registro"><button class="btn btn-outline-light" type="button">Registrar-me</button></a>
+        </div>
+      </div>
+
+      <div class="col-md-6" >
+        <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+          <h2>Ver as postagens</h2>
+          <p>Já tenho minha conta, vamos ver o que tem de bom aqui!</p>
+          {{#if user}}
+              <a href="/postagens"><button class="btn btn-outline-secondary" type="button">Postagens Recentes</button></a>
+          {{else}}  
+              <a href="usuarios/login"><button class="btn btn-outline-secondary" type="button">Login</button></a>
+               <a href="/postagens"><button class="btn btn-outline-secondary" type="button">Postagens Recentes</button></a>
+          {{/if}}
+
+        </div>
+  </div>
+
+{{/if}}
+
+    
+    <footer class="pt-3 mt-4 text-body-secondary border-top">
+      &copy; Lucas Leria 2023
+    </footer>
+<script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+<script src="/js/bootstrap.js"></script>
+</html>
