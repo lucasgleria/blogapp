@@ -24,7 +24,7 @@ app.set('view engine', 'handlebars')
 
 
 function randomColor() {
-    const shades = ["#d8dee3 ", "#91a3b0", "#b2bec7", "#666769"]; // Paleta de preto e cinza
+    const shades = ["#d8dee3 ", "#91a3b0", "#b2bec7", "#0D6EFD"]; // Paleta de preto e cinza
     const randomIndex = Math.floor(Math.random() * shades.length); // Índice aleatório na paleta
   
     return shades[randomIndex]; // Retorna a cor aleatória da paleta
