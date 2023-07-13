@@ -10,7 +10,7 @@ const session = require("express-session")
 const flash = require("connect-flash")
 const passport = require('passport')
     require("./config/auth")(passport)
-
+const db = require("./config/db")
     
 
 const postagens = require("./routes/postagem")
@@ -50,7 +50,7 @@ const usuarios = require("./routes/usuario")
 
     // Mongoose
         mongoose.Promise = global.Promise
-        mongoose.connect('mongodb://127.0.0.1/blogapp').then(() => {
+        mongoose.connect(db.mongoURI).then(() => {
             console.log('Conexão com o banco realizada!')
         }).catch((err) => {
             console.log('Erro' + err)
