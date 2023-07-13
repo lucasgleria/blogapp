@@ -1,5 +1,7 @@
 if(process.env.NODE_ENV == "production"){
-    module.exports = {mongoURI: "mongodb+srv://lleria:00611202087176789789luk@blogappcluster.okfybu5.mongodb.net/?retryWrites=true&w=majority"}
+    console.log(process.env.DB_MAJOR)
+    module.exports = {mongoURI: process.env.DB_MAJOR}
 }else{
-    module.exports = {mongoURI: "mongodb://localhost:27017/"}
+    console.log(process.env.DB_REGULAR)
+    module.exports = {mongoURI: process.env.DB_REGULAR}
 }

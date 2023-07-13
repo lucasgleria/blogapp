@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 //Carregando módulos
 const express = require('express')
 const handlebars = require('express-handlebars')
@@ -11,7 +13,6 @@ const flash = require("connect-flash")
 const passport = require('passport')
     require("./config/auth")(passport)
 const db = require("./config/db")
-    
 
 const postagens = require("./routes/postagem")
 const categorias = require("./routes/categoria")
@@ -53,7 +54,7 @@ const usuarios = require("./routes/usuario")
         mongoose.connect(db.mongoURI).then(() => {
             console.log('Conexão com o banco realizada!')
         }).catch((err) => {
-            console.log('Erro' + err)
+            console.log('Erro: ' + err)
         })
 
     // Public
@@ -83,4 +84,5 @@ const usuarios = require("./routes/usuario")
 const PORT = process.env.PORT || 8080
 app.listen(PORT, ()=> {
     console.log(`Servidor rodando`)
+    // console.log(process.env.DB_MAJOR)
 })
