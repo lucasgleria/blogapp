@@ -44,6 +44,12 @@ Neste repositório está o projeto blogapp, desenvolvido apenas por mim, seguind
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-FFFFFF?style=for-the-badge&logo=bootstrap&logoColor=000)](https://getbootstrap.com/)
 [![Handlebars](https://img.shields.io/badge/Handblebars-FFFFFF?style=for-the-badge&logo=handlebars&logoColor=000)](https://handlebars.com/)
 
+**Desenvolvimento, manipulação e hospedagem do Banco de Dados**
+
+[![MongoDB](https://img.shields.io/badge/MongoDB-FFFFFF?style=for-the-badge&logo=mongodb&logoColor=000)](https://mongodb.com/)
+[![MongoDB Atlas](https://img.shields.io/badge/MongoDB_Atlas-FFFFFF?style=for-the-badge&logo=mongodb&logoColor=000)](https://mongodb.com/)
+[![MongoDB Compass](https://img.shields.io/badge/MongoDB_Compass-FFFFFF?style=for-the-badge&logo=mongodb&logoColor=000)](https://mongodb.com/)
+
 **Manipulação, controle e hospedagem de dados e versões**
 
 [![GitHub](https://img.shields.io/badge/GitHub-FFFFFF?style=for-the-badge&logo=github&logoColor=000)](https://docs.github.com/)
