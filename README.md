@@ -1,5 +1,11 @@
 # Projeto de Desenvolvimento Web - Portfólio
-## O Projeto: lleria blogapp
+## | Objetivo principal
+
+O objetivo central de criar projetos de desenvolvimento web para o portfólio é demonstrar minhas habilidades, conhecimentos e experiência como desenvolvedor de softwares para potenciais empregadores, clientes e colegas de trabalho. 
+
+Esse portfólio serve como uma maneira eficaz de exibir meu trabalho e destacar-me no mercado de desenvolvimento web.
+
+## | O Projeto: lleria blogapp
 
 Neste repositório está o projeto blogapp, desenvolvido apenas por mim, seguindo instruções de um curso de Node.js.
 
@@ -7,7 +13,7 @@ Neste repositório está o projeto blogapp, desenvolvido apenas por mim, seguind
 * Tema do Site: Aplicação em formato de blog
 * Disponiblizamos: Acesso à todas as rotas exceto de Administradores.
 
-## O que encontrarei nessa aplicação web?
+## | O que encontrarei nessa aplicação web?
 
 * Página de _Home_
     * Breve descrição do Projeto
@@ -15,10 +21,10 @@ Neste repositório está o projeto blogapp, desenvolvido apenas por mim, seguind
     * Possibilidade de Login
 * Página de _Registro_
     * Tela simples de Registro
-    * Requisitando email, nome, senha e confirmar senha
+       * Requisitando email, nome, senha e confirmar senha
 * Página de _Login_
     * Tela simples de Login
-    * Requisitando email e senha
+       * Requisitando email e senha
 * Página de _Home_ após _Login_
     * Breve descrição do Projeto
     * Possibilidade de visualização de _Categorias_ e _Postagens_
@@ -29,11 +35,11 @@ Neste repositório está o projeto blogapp, desenvolvido apenas por mim, seguind
     * Visualização de prévias de todas as postagens: Apenas título, descrição, categoria e data de publicação
         * Exibição de toda a postagem: Título, descrição, conteúdo, categoria e data de publicação
 
-## ROTAS ADMINISTRATIVAS SÓ SERÃO ACESSADAS ENTRANDO EM CONTATO.
+## | ROTAS ADMINISTRATIVAS SÓ SERÃO ACESSADAS ENTRANDO EM CONTATO.
 
 * Rotas administrativas permitem adição, edição e deleção de categorias e Postagens.
 
-## Tecnologias Utilizadas
+## | Tecnologias Utilizadas
 
 **Desenvolvimento da Aplicação**
 
