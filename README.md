@@ -35,7 +35,7 @@ Neste repositório está o projeto blogapp, desenvolvido apenas por mim, seguind
     * Visualização de prévias de todas as postagens: Apenas título, descrição, categoria e data de publicação
         * Exibição de toda a postagem: Título, descrição, conteúdo, categoria e data de publicação
 
-## | ROTAS ADMINISTRATIVAS SÓ SERÃO ACESSADAS ENTRANDO EM CONTATO.
+## | ROTAS ADMINISTRATIVAS.
 
 * Rotas administrativas permitem adição, edição e deleção de categorias e Postagens.
 
